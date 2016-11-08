@@ -1,0 +1,140 @@
+
+
+h1{
+    font-family: 'Bree serif', 'serif';
+}
+
+a{
+    text-decoration: none !important;
+}
+
+.button-setting{
+    text-align: left;
+    color: black;
+    text-align: left;
+    align-content: left;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    padding: 15px;
+    font-size:17px;
+    outline: none !important;
+}
+
+.button-setting:hover{
+    text-decoration: none !important;
+     
+}
+
+.button-setting:visited{
+    background-color: white;
+    background-color: #35478C;
+    outline: none;
+}
+
+
+.booking-container{
+    border-radius: 10px;
+    background-color: #EEEEEE;
+}
+
+
+/*slideshow conatiner*/
+.slideshow-container{
+max-width: 1000px;    
+position: relative;
+margin: auto;
+}
+
+.img-responsive{
+    width: 800px;
+    height: 350px;
+}
+
+
+/* Next & previous buttons */
+.prevArrow, .nextArrow {
+  cursor: pointer;
+  position: absolute;
+  top: 35%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 60px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.nextArrow {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prevArrow {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prevArrow:hover, .nextArrow:hover {
+    text-decoration: none;
+  /*background-color: rgba(0,0,0,0.8);*/
+}
+
+/* Caption text */
+.text {
+  color: #000000;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: -20px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/5 etc) */
+.numbertext {
+  color: #000000;
+  font-size: 16px;
+  padding: 8px 12px;
+  position: relative;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  opacity: 1;    
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
