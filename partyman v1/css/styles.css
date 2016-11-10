@@ -24,6 +24,10 @@ td {
     font-weight: normal;
 }
 
+.people{
+    width:50px;
+}
+
 .button-setting{
     background-color: #35478C;
     text-align: left;
