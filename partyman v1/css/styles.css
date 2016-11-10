@@ -23,7 +23,7 @@ a{
 
 .button-setting:hover{
     text-decoration: none !important;
-     
+    cursor: default;
 }
 
 .button-setting:visited{
@@ -137,4 +137,16 @@ margin: auto;
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
+}
+
+h4{
+  position: relative;
+}
+
+.glyphicon-ok{
+  float: right;
+  display: inline;
+  position: absolute;
+  top: 18px;  
+  right: 10px;
 }
