@@ -21,6 +21,7 @@ td {
     padding: 20px;
     text-align: left;
     border-bottom: 2px dotted #ddd;
+    font-weight: normal;
 }
 
 .button-setting{
@@ -176,4 +177,13 @@ h4{
 
 .panel-body h2, h3, h4, h5{
   text-align: left;
+}
+
+.panel-group .panel+.panel {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.panel-group{
+  margin-bottom: 0;
 }
