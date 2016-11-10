@@ -1,4 +1,6 @@
-
+body{
+    background-color: #7FB2F0 !important; 
+}
 
 h1{
     font-family: 'Bree serif', 'serif';
@@ -22,10 +24,11 @@ td {
 }
 
 .button-setting{
+    background-color: #35478C;
     text-align: left;
-    color: black;
     text-align: left;
     align-content: left;
+    color: #ffffff;
     padding-left: 15px;
     padding-bottom: 5px;
     padding-top: 10px;
@@ -37,11 +40,12 @@ td {
 .button-setting:hover{
     text-decoration: none !important;
     cursor: default;
+    color: #ffffff;
 }
 
 .button-setting:visited{
     background-color: white;
-    background-color: #35478C;
+    background-color: #ffffff;
     outline: none;
 }
 
