@@ -1,5 +1,5 @@
-html{
-    background-color: #7FB2F0; 
+body{
+    background-color: #7FB2F0 !important; 
 }
 
 h1{
@@ -40,11 +40,12 @@ td {
 .button-setting:hover{
     text-decoration: none !important;
     cursor: default;
+    color: #ffffff;
 }
 
 .button-setting:visited{
     background-color: white;
-    background-color: #35478C;
+    background-color: #ffffff;
     outline: none;
 }
 
