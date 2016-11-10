@@ -163,3 +163,12 @@ h4{
   top: 18px;  
   right: 10px;
 }
+
+.panel-body p{
+  text-align: left;
+  font-weight: normal;
+}
+
+.panel-body h2, h3, h4, h5{
+  text-align: left;
+}
