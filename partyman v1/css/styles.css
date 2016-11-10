@@ -8,6 +8,19 @@ a{
     text-decoration: none !important;
 }
 
+.headline{
+    padding: 15px;
+    text-align: center;
+    border-bottom: 2px solid #35478C;
+    font-size: 20px;
+}
+
+td {
+    padding: 20px;
+    text-align: left;
+    border-bottom: 2px dotted #ddd;
+}
+
 .button-setting{
     text-align: left;
     color: black;
