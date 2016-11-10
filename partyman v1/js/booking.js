@@ -22,23 +22,28 @@ $('.step-continue').click(function (e) {
     var formid = (id + "-form");
     var form = $('#' + formid);
     var icon = $('#' + id + '-valid-icon');
-    form.validate();
-    if(!form.valid()){
-        console.log('form not valid');
-        e.stopPropagation(); 
-        icon.hide();
+
+    try{
+        form.validate();
+        if(!form.valid()){
+            console.log('form not valid');
+            e.stopPropagation(); 
+            icon.hide();
+        }
+        else{
+            console.log('form valid');
+            icon.show();
+            
+            var step = parseInt(formid.charAt(5)) + 1;
+            var next = "container-step-" + step;
+            var element = $('#' + next);
+            
+        }
     }
-    else{
-        console.log('form valid');
-        icon.show();
-        
-        var step = parseInt(formid.charAt(5)) + 1;
-        var next = "container-step-" + step;
-        var element = $('#' + next);
-       // element[0].scrollToTop();
-        element[0].scrollIntoView();
-        
+    catch(e){
+        icon.show();    
     }
+
 
    // e.stopPropagation();   
     // some action ...

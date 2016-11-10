@@ -185,43 +185,37 @@
 <!-- END STEP 1 -->
 
 <!-- STEP 2 -->
-              <div id="container-step-2" class="panel panel-default">
-                <form id="step-2-submit-form">
-                  <div class=""> <!-- burde denne fjernes? -->
-                      <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion"><input type="button" class="btn btn-secondary btn-lg btn-block button-setting" value="2 Date & Time"></input></a><span style="display:none" id="step-2-submit-valid-icon" class="glyphicon glyphicon-ok"></span>
-                      </h4>
-                    </div>
-                    <div id="collapse2" class="panel-collapse collapse">
-                      <div class="panel-body">
-                        <div style="overflow:hidden;">
-                          <div class="form-group">
-                            <div class="row">
-                              <div class="col-md-12">
-                                <div id="datetimepicker12"></div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <input type="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1" class="btn btn-primary" value="Back" />
-                        <input id="step-2-submit" type="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3" class="btn btn-primary step-continue" value="Next" />
+          <div id="container-step-2" class="panel panel-default">
+              <h4 class="panel-title">
+                <input type="button" class="btn btn-secondary btn-lg btn-block button-setting" value="2 Date & Time" data-toggle="collapse" data-parent="#accordion"></input><span style="display:none" id="step-2-submit-valid-icon" class="glyphicon glyphicon-ok"></span>
+              </h4>
+            <div id="collapse2" class="panel-collapse collapse">
+              <div class="panel-body">
+                <div style="overflow:hidden;">
+                  <div class="form-group">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div id="datetimepicker12"></div>
                       </div>
                     </div>
                   </div>
-                </form>
+                </div>
+                <input type="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1" class="btn btn-primary" value="Back" />
+                <input id="step-2-submit" type="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3" class="btn btn-primary step-continue" value="Next" />
+              </div>
+            </div>
+          </div>
 
 <!-- END STEP 2 -->
 
 <!-- STEP 3-->
-              <div id="container-step-3"  class="panel panel-default">
-                <form id="step-3-submit-form"> <!-- burde denne fjernes? -->
-                  <h4 class="panel-title">
+ <div id="container-step-3" class="panel panel-default">
+                 <h4 class="panel-title">
                     <a data-toggle="collapse" data-parent="#accordion"><input type="button" class="btn btn-secondary btn-lg btn-block button-setting" value="3 Extra"></input></a><span style="display:none" id="step-3-submit-valid-icon" class="glyphicon glyphicon-ok"></span>
                   </h4>
-                </div>
-                <div id="collapse3" class="panel-collapse collapse">
-                  <div class="panel-body">
-                    <div class="row">
+                  <div id="collapse3" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <form id="step-3-submit-form"> <!-- burde denne fjernes? -->
                       
                         <table>
                             <th class="headline">Entertainers</th>
@@ -310,11 +304,10 @@
                             </tr>
                         </table>
                         
-                    </div>
                     <input type="button" data-toggle="collapse" data-parent="#accordion" href="#collapse2" class="btn btn-primary" value="Back" />
                     <input id="step-3-submit" type="button" data-toggle="collapse" data-parent="#accordion" href="#collapse4" class="btn btn-primary step-continue" value="Next" />
-                  </div>
                 </form>
+              </div>
               </div>
 <!-- END STEP 3 -->
 
