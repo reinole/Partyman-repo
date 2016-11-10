@@ -237,15 +237,92 @@
               </div>
 <!-- END STEP 3 -->
 
-<!-- STEP 4 -->
-                <div id="container-step-4" class="panel panel-default">
+                <!-- STEP 4-->
+                <div id="container-step-4"  class="panel panel-default">
                   <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion"><input type="button" class="btn btn-secondary btn-lg btn-block button-setting" value="4 Payment"></input></a><span style="display:none" id="step-4-submit-valid-icon" class="glyphicon glyphicon-ok"></span>
+                    <a data-toggle="collapse" data-parent="#accordion"><input type="button" class="btn btn-secondary btn-lg btn-block button-setting" value="4 Summary"></input></a><span style="display:none" id="step-4-submit-valid-icon" class="glyphicon glyphicon-ok"></span>
                   </h4>
-                <div>
+                </div>
                 <div id="collapse4" class="panel-collapse collapse">
                   <div class="panel-body">
-                    <form accept-charset="UTF-8" action="/" class="require-validation" data-cc-on-file="false" data-stripe-publishable-key="pk_bQQaTxnaZlzv4FnnuZ28LFHccVSaj" id="step-4-submit-form" method="post">
+                    <div class="row">
+                     <div class="col-xs-6  col-md-offset-2">
+                      <h3>Summary of your order:</h3>
+                    </div>
+                    <div class="col-xs-2">
+                    </div>
+                    <hr>
+                  </div>
+                  <br />
+                  <div class="row">
+                   <div class="col-xs-4  col-md-offset-2">
+                    <p>Location</p>
+                  </div>
+                  <div class="col-xs-4">
+                    <p>Bristol</p>
+                  </div>
+                  <hr>
+                </div>
+                <div class="row">
+                 <div class="col-xs-4 col-md-offset-2">
+                  <p>Type</p>
+                </div>
+                <div class="col-xs-4">
+                  <p>Make a bear</p>
+                </div>
+                <hr>
+              </div>
+              <div class="row">
+               <div class="col-xs-4 col-md-offset-2">
+                <p>Date & time</p>
+              </div>
+              <div class="col-xs-4">
+                <p>9.00 PM, November 19th 2016</p>
+              </div>
+              <hr>
+            </div>
+            <div class="row">
+             <div class="col-xs-4 col-md-offset-2">
+              <h5>Extras</h5>
+            </div>
+            <div class="col-xs-4">
+            </div>
+            <hr>
+          </div>
+          <div class="row">
+           <div class="col-xs-4 col-md-offset-2">
+            <p>Cosmo the dragon</p>
+          </div>
+          <div class="col-xs-4">
+            <input checked="true" style="float: left" disabled="true" type="checkbox" />
+          </div>
+          <hr>
+        </div>
+          <div class="row">
+           <div class="col-xs-4 col-md-offset-2">
+            <p>Face painters</p>
+          </div>
+          <div class="col-xs-4">
+             <input checked="true" style="float: left" disabled="true" type="checkbox" />
+          </div>
+          <hr>
+        </div>
+      </div>
+      <input type="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3" class="btn btn-primary" value="Back" />
+      <input id="step-4-submit" type="button" data-toggle="collapse" data-parent="#accordion" href="#collapse5" class="btn btn-primary step-continue" value="Next" />
+    </div>
+  </div>
+  <!-- END STEP 4 -->
+
+<!-- STEP 5 -->
+                <div id="container-step-5" class="panel panel-default">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion"><input type="button" class="btn btn-secondary btn-lg btn-block button-setting" value="5 Payment"></input></a><span style="display:none" id="step-5-submit-valid-icon" class="glyphicon glyphicon-ok"></span>
+                  </h4>
+                <div>
+                <div id="collapse5" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <form accept-charset="UTF-8" action="/" class="require-validation" data-cc-on-file="false" data-stripe-publishable-key="pk_bQQaTxnaZlzv4FnnuZ28LFHccVSaj" id="step-5-submit-form" method="post">
                       <div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓" /><input name="_method" type="hidden" value="PUT" /><input name="authenticity_token" type="hidden" value="qLZ9cScer7ZxqulsUWazw4x3cSEzv899SP/7ThPCOV8=" /></div>
                       <br>
                       <div class='form-row'>
@@ -294,12 +371,11 @@
                       <div class='form-row'>
                         <div class='form-group'>
                          <label class='control-label'></label>
-                       <!--  <button id="step-4-submit" class='form-control btn btn-primary' type='submit'> Continue →</button> -->
                            <div class="row">
                            </div>
                            <br />
-                          <input type="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3" class="btn btn-primary" value="Back" />
-                          <input id="step-2-submit" type="button" data-toggle="modal" data-target="#myModal" class="btn btn-primary" value="Next" />
+                          <input type="button" data-toggle="collapse" data-parent="#accordion" href="#collapse4" class="btn btn-primary" value="Back" />
+                          <input id="step-5-submit" type="button" data-toggle="modal" data-target="#myModal" class="btn btn-primary" value="Next" />
                              <!-- Modal -->
                           <div class="modal fade" id="myModal" role="dialog">
                             <div class="modal-dialog">
@@ -327,8 +403,8 @@
                                   <p>would you like to save your payment information for another time or would you like to continue as a guest?</p>
                               </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Create an account</button>
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Continue as guest</button>       
+                                <button href="#" type="button" class="btn btn-default">Create an account</button>
+                                <a href="receipt.html"><button type="button" class="btn btn-default">Continue as guest</button></a>      
                             </div>
                                   </div>
                                 </div>
