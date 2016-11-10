@@ -21,6 +21,7 @@ td {
     padding: 20px;
     text-align: left;
     border-bottom: 2px dotted #ddd;
+    font-weight: normal;
 }
 
 .button-setting{
