@@ -22,7 +22,7 @@ $('.step-continue').click(function (e) {
     var formid = (id + "-form");
     var form = $('#' + formid);
     var icon = $('#' + id + '-valid-icon');
-
+    
     try{
         form.validate();
         if(!form.valid()){

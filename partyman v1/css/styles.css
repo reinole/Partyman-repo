@@ -12,8 +12,8 @@ a{
 
 .headline{
     padding: 15px;
-    text-align: center;
-    border-bottom: 2px solid #35478C;
+    text-align: left;
+    /*border-bottom: 2px solid #35478C;*/
     font-size: 20px;
 }
 
@@ -21,6 +21,11 @@ td {
     padding: 20px;
     text-align: left;
     border-bottom: 2px dotted #ddd;
+    font-weight: normal;
+}
+
+.people{
+    width:50px;
 }
 
 .button-setting{
@@ -185,4 +190,17 @@ h4{
 
 .panel-group{
   margin-bottom: 0;
+}
+
+input[value=Next], input[value=Back]{
+  margin-top: 2px;
+  margin-bottom: 2px; 
+}
+
+th{
+  padding: 0;
+}
+
+select{
+  padding: 0 !important;
 }
